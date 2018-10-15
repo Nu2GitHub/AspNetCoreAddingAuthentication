@@ -10,7 +10,7 @@ namespace WishList.Models.AccountViewModels
         public string Email { get; set; }
 
         [Required]
-        [MinLength(8)]
+        [StringLength(100)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
